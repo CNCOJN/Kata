@@ -18,11 +18,10 @@ namespace StringAverage.Tests
         [TestCase("")]
         public void StringAverage1_GivenNullOrEmptyString_ReutrnsNA(string input)
         {
-            // Arrange
             string message = "n/a";
-            // Act
+            
             var result = _case?.StringAverage1(input);
-            // Assert
+            
             result.Should().Be(message);
         }
 
@@ -31,11 +30,10 @@ namespace StringAverage.Tests
         [TestCase("    ")]
         public void StringAverage1_GivenBlankSpaces_ReutrnsNA(string input)
         {
-            // Arrange
             string message = "n/a";
-            // Act
+            
             var result = _case?.StringAverage1(input);
-            // Assert
+            
             result.Should().Be(message);
         }
 
@@ -46,11 +44,10 @@ namespace StringAverage.Tests
         [TestCase("ONE TWO THREE")]
         public void StringAverage1_GivenOneTwoThree_ReturnsTwo(string input)
         {
-            // Arrange
             string message = "two";
-            // Act
+            
             var result = _case?.StringAverage1(input);
-            // Assert
+            
             result.Should().Be(message);
         }
 
@@ -61,11 +58,10 @@ namespace StringAverage.Tests
         [TestCase("ONE  TWO  THREE")]
         public void StringAverage1_GivenOneTwoThreeAndAddSpacesBetweenThem_ReturnsTwo(string input)
         {
-            // Arrange
             string message = "two";
-            // Act
+            
             var result = _case?.StringAverage1(input);
-            // Assert
+            
             result.Should().Be(message);
         }
 
@@ -73,11 +69,10 @@ namespace StringAverage.Tests
         [TestCase("twelve two one")]
         public void StringAverage1_GivenGreaterThanNine_ReturnsNA(string input)
         {
-            // Arrange
             string message = "n/a";
-            // Act
+            
             var result = _case?.StringAverage1(input);
-            // Assert
+            
             result.Should().Be(message);
         }
 
@@ -87,11 +82,10 @@ namespace StringAverage.Tests
         [TestCase("Not_A_Number  two  one")]
         public void StringAverage1_GivenStringContainsNonNumber_ReturnsNA(string input)
         {
-            // Arrange
             string message = "n/a";
-            // Act
+            
             var result = _case?.StringAverage1(input);
-            // Assert
+            
             result.Should().Be(message);
         }
     }
