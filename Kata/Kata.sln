@@ -7,9 +7,31 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{1499F2E8-BC5
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{A3F144BD-48A5-4E77-9206-72F8B843DCD0}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StringAverage", "src\StringAverage\StringAverage.csproj", "{37330ED5-826D-4186-A195-A7A5265D5878}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringAverage.Tests", "tests\StringAverage.Tests\StringAverage.Tests.csproj", "{9BE5126C-57A9-4B25-B68C-274C390AC420}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{37330ED5-826D-4186-A195-A7A5265D5878}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37330ED5-826D-4186-A195-A7A5265D5878}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37330ED5-826D-4186-A195-A7A5265D5878}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37330ED5-826D-4186-A195-A7A5265D5878}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BE5126C-57A9-4B25-B68C-274C390AC420}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BE5126C-57A9-4B25-B68C-274C390AC420}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BE5126C-57A9-4B25-B68C-274C390AC420}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BE5126C-57A9-4B25-B68C-274C390AC420}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{37330ED5-826D-4186-A195-A7A5265D5878} = {1499F2E8-BC5E-48D7-90CB-2A7052B23E2E}
+		{9BE5126C-57A9-4B25-B68C-274C390AC420} = {A3F144BD-48A5-4E77-9206-72F8B843DCD0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A93E959C-E755-4D3B-8FFA-7779CF5D1548}
